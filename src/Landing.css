@@ -1,0 +1,735 @@
+/* ======================
+   Core layout & palette
+   ====================== */
+
+:root {
+  --color-bg: #fefefe;
+  --color-primary: #1a598e;
+  --color-accent: #ffbe31;
+  --color-text: #1a598e;
+  --color-light: #fefefe;
+  --color-hover: #c1fdfb;
+
+  --header-height: 100px;
+  --section-gap: 120px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  line-height: 1.4;
+  font-family: "IBM Plex Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+/* ======================
+   Headings & buttons
+   ====================== */
+
+.section-title {
+  font-family: "Ithaca", "Oswald", system-ui, sans-serif;
+  font-size: 90px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 0 0 10px 0;
+}
+
+.section-title--center {
+  text-align: center;
+}
+
+.section-title--light {
+  color: var(--color-light);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 48px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  border: 1px solid transparent;
+  font-family: "Ithaca", "Oswald", system-ui, sans-serif;
+  font-size: 48px;
+  line-height: 1.1;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.1s ease;
+}
+
+.btn--primary {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-primary);
+}
+
+.btn--outline {
+  background-color: var(--color-bg);
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.btn--light {
+  background-color: var(--color-light);
+  border-color: var(--color-light);
+  color: var(--color-primary);
+}
+
+.btn--outline:hover,
+.btn--primary:hover,
+.btn--light:hover {
+  background-color: var(--color-hover);
+  border-color: var(--color-hover);
+  color: var(--color-primary);
+  transform: translateY(-1px);
+}
+
+/* ======================
+   Page sections
+   ====================== */
+
+.page-main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--section-gap);
+  padding-top: calc(var(--header-height) + var(--section-gap));
+}
+
+.section {
+  padding: 0;
+}
+
+/* ======================
+   Header
+   ====================== */
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--header-height);
+  background-color: var(--color-bg);
+  z-index: 10;
+}
+
+.header-inner {
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.header-logo-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-logo {
+  height: 56px;
+  width: auto;
+}
+
+/* ======================
+   About section
+   ====================== */
+
+.section-about {
+  background-color: var(--color-bg);
+}
+
+.section-about-inner {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.about-text-block {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.about-description {
+  max-width: 860px;
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.about-description p {
+  margin: 0 0 16px 0;
+}
+
+.about-list {
+  margin: 0;
+  padding-left: 32px;
+  font-size: 24px;
+}
+
+.about-list li {
+  margin-bottom: 4px;
+}
+
+.section-actions {
+  margin-top: 16px;
+}
+
+.about-illustration {
+  flex-shrink: 0;
+}
+
+.about-image {
+  width: 273px;
+  height: 214px;
+  object-fit: contain;
+}
+
+/* ======================
+   Join section
+   ====================== */
+
+.section-join {
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  padding: 60px 0;
+}
+
+.section-join-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.join-text-block {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.join-description {
+  max-width: 765px;
+  font-size: 24px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.join-illustration {
+  flex-shrink: 0;
+}
+
+.join-image {
+  width: 240px;
+  height: 240px;
+  object-fit: contain;
+}
+
+/* ======================
+   Activity cards
+   ====================== */
+
+.section-activities {
+  height: 605px; /* desktop height from design */
+  background-color: var(--color-bg);
+  font-family: "Ithaca", "Oswald", system-ui, sans-serif;
+  font-size: 48px;
+  color: var(--color-primary);
+}
+
+.activities-inner {
+  display: flex;
+  width: 100%;
+  gap: 30px;
+}
+
+.activities-column {
+  height: 605px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.activities-column--right {
+  flex: 1 1 auto;
+  align-self: stretch;
+}
+
+.activities-row {
+  width: 100%;
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.activity-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+  transition:
+    background-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.1s ease;
+}
+
+/* layout per design grid */
+
+.activities-column:first-child .activity-card:first-child {
+  flex: 1;
+}
+
+.activities-column:first-child .activity-card:last-child {
+  height: 222px;
+  flex-shrink: 0;
+}
+
+.activities-column--right > .activity-card:first-child {
+  height: 236px;
+  flex-shrink: 0;
+}
+
+/* outlined interview card */
+
+.activity-card--outline {
+  border: 1px solid var(--color-primary);
+  background-color: var(--color-bg);
+  color: var(--color-primary);
+}
+
+.activity-card--interview {
+  align-self: stretch;
+  flex: 0.8509;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+/* specific solid variants */
+
+.activity-card--solve {
+  width: 100%;
+  height: 100%;
+}
+
+.activity-card--read {
+  width: 100%;
+  height: 222px;
+}
+
+.activity-card--gather {
+  width: 100%;
+  height: 236px;
+  align-self: stretch;
+}
+
+/* hover states */
+
+.activity-card--solve:hover,
+.activity-card--read:hover,
+.activity-card--gather:hover,
+.activity-card--outline.activity-card--interview:hover {
+  background-color: var(--color-hover);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  transform: translateY(-2px);
+}
+
+/* icon */
+
+.activity-icon {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+  align-self: flex-end;
+}
+
+/* card content */
+
+.activity-content {
+  width: 100%;
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  font-size: 48px;
+  color: #1a598e;
+}
+
+/* interview card keeps icon + text closer */
+
+.activity-content--interview {
+  margin-top: 0;
+}
+
+.activity-content-block {
+  width: 383px;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+/* headings inside activity cards */
+
+.activity-title {
+  margin: 0;
+  line-height: 1.1;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: left;
+  font-family: "Ithaca", "Oswald", system-ui, sans-serif;
+  font-size: 48px;
+  display: inline-block;
+  width: 253px;
+}
+
+.activity-title--read {
+  width: 255px;
+}
+
+.activity-title--gather {
+  width: 383px;
+}
+
+/* text inside activity cards */
+
+.activity-text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.2;
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+  text-align: left;
+  display: inline-block;
+  width: 253px;
+}
+
+.activity-text--read {
+  width: 255px;
+}
+
+.activity-text--gather {
+  width: 383px;
+}
+
+/* pencil block */
+
+.activity-pencil-card {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  border-radius: 20px;
+  border: 1px solid var(--color-primary);
+  overflow: hidden;
+}
+
+.activity-pencil-image {
+  position: absolute;
+  height: 71.09%;
+  width: 53.89%;
+  top: 14.45%;
+  right: 22.99%;
+  bottom: 14.45%;
+  left: 23.11%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* ======================
+   Calendar section
+   ====================== */
+
+.section-calendar {
+  background-color: var(--color-bg);
+}
+
+.section-calendar-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  text-align: center;
+}
+
+.calendar-frame {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.calendar-image {
+  width: 100%;
+  height: 100%;
+  max-height: 609px;
+  object-fit: cover;
+}
+
+/* ======================
+   Pricing section
+   ====================== */
+
+.section-pricing {
+  background-color: var(--color-bg);
+}
+
+.pricing-inner {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 60px;
+  padding: 60px 180px;
+}
+
+.pricing-card {
+  border-radius: 20px;
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  flex: 1 0 0;
+  transition:
+    background-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.1s ease;
+}
+
+.pricing-card--free:hover,
+.pricing-card--paid:hover {
+  background-color: var(--color-hover);
+  color: #1a598e;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  transform: translateY(-2px);
+}
+
+.pricing-card--free .btn--light:hover,
+.pricing-card--paid .btn--light:hover {
+  background-color: #ffbe31;
+  border-color: #ffbe31;
+}
+
+.pricing-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.pricing-price {
+  letter-spacing: -0.02em;
+  font-family: "Ithaca", "Oswald", system-ui, sans-serif;
+  font-size: 48px;
+}
+
+.pricing-period {
+  font-size: 24px;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.pricing-text {
+  align-self: stretch;
+  margin: 0;
+  line-height: 1.2;
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.pricing-actions {
+  margin-top: auto;
+}
+
+/* ======================
+   FAQ section
+   ====================== */
+
+.section-faq {
+  background-color: var(--color-bg);
+}
+
+.faq-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  text-align: center;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: left;
+}
+
+.faq-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 30px 0;
+  border-bottom: 1px solid var(--color-primary);
+}
+
+.faq-icon {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 90px;
+  background: #ffbe31;
+}
+
+.faq-icon-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.faq-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.faq-question {
+  margin: 0;
+  font-family: "Ithaca", "Oswald", system-ui, sans-serif;
+  font-size: 48px;
+  line-height: 1.1;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.faq-answer {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+/* ======================
+   Footer
+   ====================== */
+
+.site-footer {
+  padding: 40px 0 60px 0;
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 24px;
+}
+
+.footer-brand,
+.footer-copy {
+  line-height: 1.2;
+}
+
+/* ======================
+   Responsive tweaks
+   ====================== */
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 24px;
+  }
+
+  .section-about-inner,
+  .section-join-inner,
+  .activities-inner,
+  .pricing-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .section-activities {
+    height: auto;
+  }
+
+  .activities-inner {
+    height: auto;
+  }
+
+  .activities-column {
+    width: 100%;
+    height: auto;
+  }
+
+  .about-illustration,
+  .join-illustration {
+    align-self: center;
+  }
+
+  .header-inner {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .page-main {
+    padding-top: 120px;
+  }
+}
+
+@media (max-width: 640px) {
+  .section-title {
+    font-size: 50px;
+  }
+
+  .btn {
+    font-size: 18px;
+    padding: 12px 32px;
+  }
+
+  .about-description,
+  .join-description,
+  .pricing-text,
+  .faq-answer {
+    font-size: 18px;
+  }
+}

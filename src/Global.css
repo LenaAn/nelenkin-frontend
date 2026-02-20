@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    line-height: normal;
+}
+
+@font-face {
+    font-family: "Ithaca";
+    src: url("/fonts/Ithaca.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
