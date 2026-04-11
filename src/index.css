@@ -6,9 +6,12 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  --color-bg: #fefefe;
+  --color-primary: #1a598e;
+  --color-accent: #ffbe31;
+  --color-text: #1a598e;
+  --color-light: #fefefe;
+  --color-hover: #c1fdfb;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
