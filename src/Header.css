@@ -1,0 +1,61 @@
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--header-height);
+    background-color: var(--color-bg);
+    z-index: 10;
+}
+
+.header-inner {
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.header-logo-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-logo {
+    height: 56px;
+    width: auto;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 48px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    border: 1px solid transparent;
+    font-family: "Ithaca", "Oswald", system-ui, sans-serif;
+    font-size: 48px;
+    line-height: 1.1;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition:
+            background-color 0.2s ease,
+            border-color 0.2s ease,
+            transform 0.1s ease;
+}
+
+.btn--outline {
+    background-color: var(--color-bg);
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+
+.btn--outline:hover {
+    background-color: var(--color-hover);
+    border-color: var(--color-hover);
+    color: var(--color-primary);
+    transform: translateY(-1px);
+}
