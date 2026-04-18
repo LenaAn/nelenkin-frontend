@@ -11,7 +11,9 @@ function Header() {
                         alt="(не) Ленкин клуб"
                     />
                 </div>
-                <button className="btn btn--outline">Войти</button>
+                <button className="btn btn--outline">
+                    <span className="btn-text">Войти</span>
+                </button>
             </div>
         </header>
     )
