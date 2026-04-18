@@ -39,3 +39,14 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
