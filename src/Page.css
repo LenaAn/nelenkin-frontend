@@ -5,11 +5,9 @@
     padding-top: calc(var(--header-height) + var(--section-gap));
 }
 
-
 .section {
     padding: 0;
 }
-
 
 .section-about {
     background-color: var(--color-bg);
@@ -31,7 +29,7 @@
 
 .section-title {
     font-family: "Ithaca", "Oswald", system-ui, sans-serif;
-    font-size: 90px;
+    font-size: 5.6rem;
     line-height: 1.1;
     text-transform: uppercase;
     font-weight: 500;
@@ -40,7 +38,7 @@
 
 .about-description {
     max-width: 860px;
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 1.2;
 }
 
@@ -48,28 +46,9 @@
     margin: 0 0 16px 0;
 }
 
-@media (max-width: 640px) {
-    .section-title {
-        font-size: 50px;
-    }
-
-    .btn {
-        font-size: 18px;
-        padding: 12px 32px;
-    }
-
-    .about-description,
-    .join-description,
-    .pricing-text,
-    .faq-answer {
-        font-size: 18px;
-    }
-}
-
 .about-list {
     margin: 0;
     padding-left: 32px;
-    font-size: 24px;
 }
 
 .about-list li {
@@ -80,7 +59,6 @@
     margin-top: 16px;
 }
 
-
 .about-illustration {
     flex-shrink: 0;
 }
@@ -89,4 +67,13 @@
     width: 273px;
     height: 214px;
     object-fit: contain;
+}
+
+@media (max-width: 640px) {
+    .section-title {
+        font-size: 3rem;
+    }
+    .about-description {
+        font-size: 1.1rem;
+    }
 }
