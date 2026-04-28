@@ -23,39 +23,23 @@
     gap: 10px;
 }
 
-/*.header-logo {*/
-/*    height: 56px;*/
-/*    width: auto;*/
-/*}*/
-
 .header-logo {
     height: var(--header-height) - 44;
     width: auto;
 }
 
-/*.btn {*/
-/*    height: var(--control-height);*/
-/*    padding: 0 24px; !* horizontal only *!*/
-/*    display: inline-flex;*/
-/*    align-items: center;*/
-/*    justify-content: center;*/
-/*    box-sizing: border-box;*/
-/*}*/
-
 .btn {
-    font-size: 48px;
+    font-size: 30px;
     line-height: 1;
     height: var(--header-height) - 44;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 22px 48px;
+    padding: 20px 53px;
     box-sizing: border-box;
     border-radius: 30px;
     border: 1px solid transparent;
     font-family: "Ithaca", "Oswald", system-ui, sans-serif;
-    /*font-size: 48px;*/
-    /*line-height: 1.1;*/
     font-weight: 500;
     text-transform: uppercase;
     cursor: pointer;
@@ -92,14 +76,11 @@
     .header-inner {
         justify-content: space-around
     }
-    /*.btn-text {*/
-    /*    display: none;*/
-    /*}*/
     .header-logo {
-        content: url("/star.svg");
+        content: url("/img/logo_short.svg");
     }
-    /*.btn {*/
-    /*    font-size: 18px;*/
-    /*    padding: 12px 32px;*/
-    /*}*/
+    .btn {
+        font-size: 18px;
+        padding: 12px 32px;
+    }
 }
