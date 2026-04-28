@@ -1,0 +1,92 @@
+.page-main {
+    display: flex;
+    flex-direction: column;
+    gap: var(--section-gap);
+    padding-top: calc(var(--header-height) + var(--section-gap));
+}
+
+
+.section {
+    padding: 0;
+}
+
+
+.section-about {
+    background-color: var(--color-bg);
+}
+
+.section-about-inner {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.about-text-block {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.section-title {
+    font-family: "Ithaca", "Oswald", system-ui, sans-serif;
+    font-size: 90px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+}
+
+.about-description {
+    max-width: 860px;
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+.about-description p {
+    margin: 0 0 16px 0;
+}
+
+@media (max-width: 640px) {
+    .section-title {
+        font-size: 50px;
+    }
+
+    .btn {
+        font-size: 18px;
+        padding: 12px 32px;
+    }
+
+    .about-description,
+    .join-description,
+    .pricing-text,
+    .faq-answer {
+        font-size: 18px;
+    }
+}
+
+.about-list {
+    margin: 0;
+    padding-left: 32px;
+    font-size: 24px;
+}
+
+.about-list li {
+    margin-bottom: 4px;
+}
+
+.section-actions {
+    margin-top: 16px;
+}
+
+
+.about-illustration {
+    flex-shrink: 0;
+}
+
+.about-image {
+    width: 273px;
+    height: 214px;
+    object-fit: contain;
+}

@@ -1,11 +1,13 @@
 import Header from "./Header.jsx";
+import Page from "./Page.jsx"
 
 function App() {
 
   return (
-    <>
-      <Header/>
-    </>
+      <div className="page">
+          <Header/>
+          <Page/>
+      </div>
   )
 }
 

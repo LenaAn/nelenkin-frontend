@@ -28,27 +28,6 @@
     width: auto;
 }
 
-.btn {
-    font-size: 30px;
-    line-height: 1;
-    height: var(--header-height) - 44;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 53px;
-    box-sizing: border-box;
-    border-radius: 30px;
-    border: 1px solid transparent;
-    font-family: "Ithaca", "Oswald", system-ui, sans-serif;
-    font-weight: 500;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition:
-            background-color 0.2s ease,
-            border-color 0.2s ease,
-            transform 0.1s ease;
-}
-
 .btn--outline {
     background-color: var(--color-bg);
     border-color: var(--color-primary);
@@ -78,9 +57,5 @@
     }
     .header-logo {
         content: url("/img/logo_short.svg");
-    }
-    .btn {
-        font-size: 18px;
-        padding: 12px 32px;
     }
 }
