@@ -3,7 +3,7 @@ import './Header.css'
 function Header() {
     return (
         <header className="site-header">
-            <div className="container header-inner">
+            <div className="header-inner">
                 <img
                     className="header-logo"
                     src="/img/logo.svg"
