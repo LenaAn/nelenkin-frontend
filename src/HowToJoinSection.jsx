@@ -3,7 +3,7 @@ import './Section.css'
 function HowToJoinSection() {
     return (
         <section className="section section-join">
-            <div className="container section-join-inner">
+            <div className="container section-inner">
                 <div className="section-text-block">
                     <h2 className="section-title section-title--light">Как вступить</h2>
                     <p className="section-description">

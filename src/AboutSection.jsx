@@ -3,7 +3,7 @@ import './Section.css'
 function AboutSection() {
     return (
         <section className="section section-about">
-            <div className="container section-about-inner">
+            <div className="container section-inner">
                 <div className="section-text-block">
                     <h1 className="section-title">О клубе</h1>
 
