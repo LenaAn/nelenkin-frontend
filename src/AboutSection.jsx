@@ -25,7 +25,7 @@ function AboutSection() {
 
                 <div className="about-illustration">
                     <img
-                        className="about-image"
+                        className="section-image"
                         src="/img/book.svg"
                         alt="Иллюстрация клуба"
                     />

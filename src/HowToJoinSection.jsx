@@ -26,7 +26,7 @@ function HowToJoinSection() {
 
                 <div className="join-illustration">
                     <img
-                        className="join-image"
+                        className="section-image"
                         src="/img/sparkles.svg"
                         alt="Декоративные звёздочки"
                     />
