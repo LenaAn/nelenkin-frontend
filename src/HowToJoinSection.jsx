@@ -4,7 +4,7 @@ function HowToJoinSection() {
     return (
         <section className="section section-join">
             <div className="container section-join-inner">
-                <div className="join-text-block">
+                <div className="section-text-block">
                     <h2 className="section-title section-title--light">Как вступить</h2>
                     <p className="join-description">
                         Просто вступить в группу и написать интро про себя с хэштегом

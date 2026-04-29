@@ -4,7 +4,7 @@ function AboutSection() {
     return (
         <section className="section section-about">
             <div className="container section-about-inner">
-                <div className="about-text-block">
+                <div className="section-text-block">
                     <h1 className="section-title">О клубе</h1>
 
                     <div className="about-description">
