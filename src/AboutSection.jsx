@@ -23,13 +23,11 @@ function AboutSection() {
                     </div>
                 </div>
 
-                <div className="about-illustration">
-                    <img
-                        className="section-image"
-                        src="/img/book.svg"
-                        alt="Иллюстрация клуба"
-                    />
-                </div>
+                <img
+                    className="section-image"
+                    src="/img/book.svg"
+                    alt="Иллюстрация клуба"
+                />
             </div>
         </section>
     )

@@ -24,13 +24,11 @@ function HowToJoinSection() {
                     </div>
                 </div>
 
-                <div className="join-illustration">
-                    <img
-                        className="section-image"
-                        src="/img/sparkles.svg"
-                        alt="Декоративные звёздочки"
-                    />
-                </div>
+                <img
+                    className="section-image"
+                    src="/img/sparkles.svg"
+                    alt="Декоративные звёздочки"
+                />
             </div>
         </section>
     )
