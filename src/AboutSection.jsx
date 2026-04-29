@@ -7,7 +7,7 @@ function AboutSection() {
                 <div className="section-text-block">
                     <h1 className="section-title">О клубе</h1>
 
-                    <div className="about-description">
+                    <div className="section-description">
                         <p>
                             Клуб про System Engineering: базы данных, распределенные
                             системы, лоад балансеры, DNS резолверы и всякое такое!

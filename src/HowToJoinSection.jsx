@@ -6,7 +6,7 @@ function HowToJoinSection() {
             <div className="container section-join-inner">
                 <div className="section-text-block">
                     <h2 className="section-title section-title--light">Как вступить</h2>
-                    <p className="join-description">
+                    <p className="section-description">
                         Просто вступить в группу и написать интро про себя с хэштегом
                         #whois — чем занимаешься, где работаешь или учишься, где живешь,
                         в какой активности хочешь участвовать в клубе.

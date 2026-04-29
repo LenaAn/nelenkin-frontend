@@ -29,13 +29,13 @@
     margin: 0 0 10px 0;
 }
 
-.about-description {
+.section-description {
     max-width: 48rem;
     font-size: 1.5rem;
     line-height: 1.2;
 }
 
-.about-description p {
+.section-description p {
     margin: 0 0 16px 0;
 }
 
@@ -79,13 +79,6 @@
     color: var(--color-light);
 }
 
-.join-description {
-    max-width: 765px;
-    font-size: 24px;
-    line-height: 1.2;
-    margin: 0;
-}
-
 .join-illustration {
     flex-shrink: 0;
 }
@@ -100,7 +93,7 @@
     .section-title {
         font-size: 3rem;
     }
-    .about-description {
+    .section-description {
         font-size: 1.1rem;
     }
 }
