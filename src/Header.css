@@ -23,6 +23,10 @@
     width: auto;
 }
 
+.header-btn {
+    font-size: 30px;
+}
+
 .btn--outline {
     background-color: var(--color-bg);
     border-color: var(--color-primary);
@@ -37,6 +41,10 @@
 }
 
 @media (max-width: 640px) {
+    .header-btn {
+        font-size: 18px;
+        padding: 12px 32px;
+    }
     .header-inner {
         justify-content: space-around
     }

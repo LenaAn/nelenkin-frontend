@@ -9,7 +9,7 @@ function Header() {
                     src="/img/logo.svg"
                     alt="(не) Ленкин клуб"
                 />
-                <button className="btn btn--outline">
+                <button className="btn header-btn btn--outline">
                     <span className="btn-text">Войти</span>
                 </button>
             </div>

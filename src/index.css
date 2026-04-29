@@ -48,7 +48,7 @@ h1 {
 }
 
 .btn {
-  font-size: 30px;
+  font-size: 1.8rem;
   line-height: 1;
   height: var(--header-height) - 44;
   display: inline-flex;
@@ -81,13 +81,6 @@ h1 {
   border-color: var(--color-hover);
   color: var(--color-primary);
   transform: translateY(-1px);
-}
-
-@media (max-width: 640px) {
-  .btn {
-    font-size: 18px;
-    padding: 12px 32px;
-  }
 }
 
 *, *:before, *:after {
