@@ -35,16 +35,6 @@
     transform: translateY(-1px);
 }
 
-@media (max-width: 1024px) {
-    .container {
-        padding: 0 24px;
-    }
-    .header-inner {
-        height: auto;
-        padding: 20px 0;
-    }
-}
-
 @media (max-width: 640px) {
     .header-inner {
         justify-content: space-around
