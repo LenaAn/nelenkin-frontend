@@ -17,13 +17,8 @@
     gap: 20px;
 }
 
-.header-logo-group {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
 .header-logo {
+    display: flex;
     height: var(--header-height) - 44;
     width: auto;
 }

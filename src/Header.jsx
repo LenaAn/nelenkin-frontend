@@ -4,13 +4,11 @@ function Header() {
     return (
         <header className="site-header">
             <div className="container header-inner">
-                <div className="header-logo-group">
-                    <img
-                        className="header-logo"
-                        src="/img/logo.svg"
-                        alt="(не) Ленкин клуб"
-                    />
-                </div>
+                <img
+                    className="header-logo"
+                    src="/img/logo.svg"
+                    alt="(не) Ленкин клуб"
+                />
                 <button className="btn btn--outline">
                     <span className="btn-text">Войти</span>
                 </button>
