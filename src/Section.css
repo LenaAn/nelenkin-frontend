@@ -17,7 +17,7 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 1.8rem;
 }
 
 .section-title {
@@ -26,7 +26,7 @@
     line-height: 1.1;
     text-transform: uppercase;
     font-weight: 500;
-    margin: 0 0 10px 0;
+    margin: 0 0 0.6rem 0;
 }
 
 .section-description {
@@ -36,20 +36,20 @@
 }
 
 .section-description p {
-    margin: 0 0 16px 0;
+    margin: 0 0 1rem 0;
 }
 
 .about-list {
     margin: 0;
-    padding-left: 32px;
+    padding-left: 2rem;
 }
 
 .about-list li {
-    margin-bottom: 4px;
+    margin-bottom: 0.25rem;
 }
 
 .section-actions {
-    margin-top: 16px;
+    margin-top: 1rem;
 }
 
 .section-image {
@@ -62,7 +62,7 @@
 .section-join {
     background-color: var(--color-primary);
     color: var(--color-light);
-    padding: 60px 0;
+    padding: 3.75rem 0;
 }
 
 .section-title--light {
@@ -78,7 +78,7 @@
     }
 }
 
-@media (max-width: 820px) {
+@media (max-width: 80rem) {
     .section-image {
         display: none;
     }
