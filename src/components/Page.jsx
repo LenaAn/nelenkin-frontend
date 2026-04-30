@@ -1,7 +1,7 @@
 import './Page.css'
-import AboutSection from "./AboutSection.jsx";
-import HowToJoinSection from "./HowToJoinSection.jsx";
-import CalendarSection from "./CalendarSection.jsx";
+import AboutSection from "./sections/AboutSection.jsx";
+import HowToJoinSection from "./sections/HowToJoinSection.jsx";
+import CalendarSection from "./sections/CalendarSection.jsx";
 
 function Page() {
     return (
