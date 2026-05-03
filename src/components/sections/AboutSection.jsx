@@ -6,20 +6,23 @@ function AboutSection() {
             <div className="container section-inner">
                 <div className="section-text-block">
                     <h1 className="section-title">О клубе</h1>
-
                     <div className="section-description">
                         <p>
-                            Клуб про System Engineering: базы данных, распределенные
-                            системы, лоад балансеры, DNS резолверы и всякое такое!
+                            Вместе читаем сложные книги по программированию и обсуждаем их по главе
+                            в неделю.
+                            <br/><br/>
+                            Зачем?
                         </p>
                         <ol className="about-list">
-                            <li>читаем Designing Data Intensive Applications</li>
-                            <li>тренируем leetcode собесы</li>
+                            <li>Чтобы не забросить чтение на середине</li>
+                            <li>Чтобы послушать истории из прода от опытных коллег</li>
+                            <li>Чтобы поделиться знаниями в юутной обстановке</li>
                         </ol>
                     </div>
 
                     <div className="section-actions">
-                        <button className="btn btn--primary">Вступить</button>
+                        <a href="https://vas3k.club/post/26356/" target="_blank" rel="noopener noreferrer"
+                           className="btn btn--primary">Про историю клуба</a>
                     </div>
                 </div>
 
