@@ -5,7 +5,8 @@ function PastBoooksSection({blueSection}) {
         <section className={`section ${blueSection ? 'section-blue' : 'section-white'}`}>
             <div className="container section-inner">
                 <div className="section-text-block">
-                    <h1 className={`section-title ${blueSection ? 'section-title--light' : ''}`}>Какие книги читаем?</h1>
+                    <h1 className={`section-title ${blueSection ? 'section-title--light' : ''}`}>Какие книги
+                        читаем?</h1>
                     <div className="section-description">
                         Уже прочитали
                         <ol className="about-list">
@@ -27,13 +28,11 @@ function PastBoooksSection({blueSection}) {
                             <li>Разбираем задачи из списка LeetCode 75</li>
                             <li>Каждую неделю проводим моки по Leetcode</li>
                         </ol>
-
-
                     </div>
 
                     <div className="section-actions">
-                        <a href="https://vas3k.club/post/26356/" target="_blank" rel="noopener noreferrer"
-                           className={`btn ${blueSection ? 'btn--light' : 'btn--primary'}`}>Про историю клуба</a>
+                        <a href="https://t.me/neLenkin_bot" target="_blank" rel="noopener noreferrer"
+                           className={`btn ${blueSection ? 'btn--light' : 'btn--primary'}`}>к Telegram-боту</a>
                     </div>
                 </div>
 

@@ -5,7 +5,8 @@ function WhatToDiscuss({blueSection}) {
         <section className={`section ${blueSection ? 'section-blue' : 'section-white'}`}>
             <div className="container section-inner">
                 <div className="section-text-block">
-                    <h1 className={`section-title ${blueSection ? 'section-title--light' : ''}`}>Да что там обсуждать?</h1>
+                    <h1 className={`section-title ${blueSection ? 'section-title--light' : ''}`}>Да что там
+                        обсуждать?</h1>
                     <div className="section-description">
                         <br/><br/>
                         <b>Примеры вопросов, которые обсуждаются на звонках:</b>
@@ -20,8 +21,8 @@ function WhatToDiscuss({blueSection}) {
                     </div>
 
                     <div className="section-actions">
-                        <a href="https://vas3k.club/post/26356/" target="_blank" rel="noopener noreferrer"
-                           className={`btn ${blueSection ? 'btn--light' : 'btn--primary'}`}>Про историю клуба</a>
+                        <a href="https://t.me/neLenkin_bot" target="_blank" rel="noopener noreferrer"
+                           className={`btn ${blueSection ? 'btn--light' : 'btn--primary'}`}>к Telegram-боту</a>
                     </div>
                 </div>
 
