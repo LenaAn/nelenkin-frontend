@@ -9,9 +9,8 @@ function Header() {
                     src="/img/logo.svg"
                     alt="(не) Ленкин клуб"
                 />
-                <button className="btn header-btn btn--outline">
-                    <span className="btn-text">Войти</span>
-                </button>
+                <a href="https://t.me/neLenkin_bot" target="_blank" rel="noopener noreferrer"
+                   className="btn header-btn btn--outline">к Telegram-боту</a>
             </div>
         </header>
     )
