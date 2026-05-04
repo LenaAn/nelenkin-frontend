@@ -1,11 +1,11 @@
 import './Section.css'
 
-function TelegramBotSection() {
+function TelegramBotSection({blueSection}) {
     return (
-        <section className="section section-join">
+        <section className={`section ${blueSection ? 'section-blue' : 'section-white'}`}>
             <div className="container section-inner">
                 <div className="section-text-block">
-                    <h2 className="section-title section-title--light">Как вступить?</h2>
+                    <h2 className={`section-title ${blueSection ? 'section-title--light' : ''}`}>Как вступить?</h2>
                     <p className="section-description">
                         Общение происходит в группе в Telegram, вступить в нее через Telegram бот.
                         <br/><br/>
@@ -21,7 +21,7 @@ function TelegramBotSection() {
                     </p>
                     <div className="section-actions">
                         <a href="https://t.me/neLenkin_bot" target="_blank" rel="noopener noreferrer"
-                           className="btn btn--light">к Telegram-боту</a>
+                           className={`btn ${blueSection ? 'btn--light' : 'btn--primary'}`}>к Telegram-боту</a>
                     </div>
                 </div>
 

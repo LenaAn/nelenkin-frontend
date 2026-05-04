@@ -6,7 +6,7 @@ a {
     padding: 0;
 }
 
-.section-about {
+.section-white {
     background-color: var(--color-bg);
 }
 
@@ -63,7 +63,7 @@ a {
     object-fit: contain;
 }
 
-.section-join {
+.section-blue {
     background-color: var(--color-primary);
     color: var(--color-light);
     padding: 3.75rem 0;

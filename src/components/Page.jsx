@@ -10,12 +10,12 @@ import ActiveStreamsSection from "./sections/ActiveStreamsSection.jsx"
 function Page() {
     return (
         <main className="page-main">
-            <AboutSection/>
-            <PastBooksSection/>
-            <HowThisWorksSection/>
-            <WhatToDiscuss/>
-            <TelegramBotSection/>
-            <ActiveStreamsSection/>
+            <AboutSection blueSection={false}/>
+            <PastBooksSection blueSection={true} />
+            <HowThisWorksSection blueSection={false}/>
+            <WhatToDiscuss blueSection={true}/>
+            <TelegramBotSection blueSection={false}/>
+            <ActiveStreamsSection blueSection={true}/>
             <CalendarSection/>
         </main>
     )
