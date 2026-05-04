@@ -7,21 +7,28 @@ function PastBoooksSection() {
                 <div className="section-text-block">
                     <h1 className="section-title">Какие книги читаем?</h1>
                     <div className="section-description">
-                        <p>
-                            Сейчас идут потоки по
-                        </p>
+                        Уже прочитали
                         <ol className="about-list">
                             <li>Designing Data-Intensive Applications</li>
-                            <li>Leetcode Grind</li>
-                            <li>Leetcode Mocks</li>
-                        </ol>
-                        <br/>
-                        А до этого читали
-                        <ol className="about-list">
                             <li>Site Reliability Engineering: How Google Runs Production Systems</li>
                             <li>Designing Machine Learning Systems</li>
-                            <li>Leetcode Mocks</li>
                         </ol>
+                        <br/>
+                        А также прорешали
+                        <ol className="about-list">
+                            <li>Advent Of Code 2024</li>
+                            <li>Advent Of Code 2025</li>
+                            <li>Redis CodeCrafters</li>
+                            <li>Redis Kafka</li>
+                        </ol>
+                        <br/>
+                        А еще вместе готовимся к алгоритмическим собеседованиям
+                        <ol className="about-list">
+                            <li>Разбираем задачи из списка LeetCode 75</li>
+                            <li>Каждую неделю проводим моки по Leetcode</li>
+                        </ol>
+
+
                     </div>
 
                     <div className="section-actions">
