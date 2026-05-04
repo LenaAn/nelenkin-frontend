@@ -29,11 +29,6 @@ function PastBoooksSection({blueSection}) {
                             <li>Каждую неделю проводим моки по Leetcode</li>
                         </ol>
                     </div>
-
-                    <div className="section-actions">
-                        <a href="https://t.me/neLenkin_bot" target="_blank" rel="noopener noreferrer"
-                           className={`btn ${blueSection ? 'btn--light' : 'btn--primary'}`}>к Telegram-боту</a>
-                    </div>
                 </div>
 
                 <img

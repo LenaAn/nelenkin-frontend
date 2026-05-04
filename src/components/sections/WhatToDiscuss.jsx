@@ -19,11 +19,6 @@ function WhatToDiscuss({blueSection}) {
                             <li>Когда компании пора завести отдельную MLOps команду</li>
                         </ol>
                     </div>
-
-                    <div className="section-actions">
-                        <a href="https://t.me/neLenkin_bot" target="_blank" rel="noopener noreferrer"
-                           className={`btn ${blueSection ? 'btn--light' : 'btn--primary'}`}>к Telegram-боту</a>
-                    </div>
                 </div>
 
                 <img

@@ -15,10 +15,6 @@ function ActiveStreamsSection({blueSection}) {
                             <li>Каждую неделю устраиваем моки на определенную тему с Leetcode</li>
                         </ol>
                     </p>
-                    <div className="section-actions">
-                        <a href="https://t.me/neLenkin_bot" target="_blank" rel="noopener noreferrer"
-                           className={`btn ${blueSection ? 'btn--light' : 'btn--primary'}`}>к Telegram-боту</a>
-                    </div>
                 </div>
 
                 <img
