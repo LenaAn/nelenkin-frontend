@@ -9,8 +9,8 @@ function Page() {
     return (
         <main className="page-main">
             <AboutSection/>
-            <HowThisWorksSection/>
             <PastBooksSection/>
+            <HowThisWorksSection/>
             <TelegramBotSection/>
             <CalendarSection/>
         </main>
