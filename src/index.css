@@ -74,6 +74,12 @@ h1 {
   color: var(--color-primary);
 }
 
+.btn--light {
+  background-color: var(--color-light);
+  border-color: var(--color-light);
+  color: var(--color-primary);
+}
+
 .btn--outline:hover,
 .btn--primary:hover,
 .btn--light:hover {
