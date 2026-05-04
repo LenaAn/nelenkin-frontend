@@ -5,7 +5,7 @@ function CalendarSection() {
         <section className="section section-calendar">
             <div className="container section-calendar-inner">
                 <h2 className="section-title section-title--center">
-                    Календарь наших событий
+                    Добавь себе наш календарь!
                 </h2>
                 <iframe className="calendar-frame"
                     src="https://calendar.google.com/calendar/embed?src=f9b540541697defb8f20606ae563c7f2bb42e1c16cb3a15e9a887a43fd33acb8%40group.calendar.google.com&ctz=Europe%2FBelgrade"
