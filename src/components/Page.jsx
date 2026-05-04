@@ -1,13 +1,13 @@
 import './Page.css'
 import AboutSection from "./sections/AboutSection.jsx";
-import HowToJoinSection from "./sections/HowToJoinSection.jsx";
+import HowThisWorksSection from "./sections/HowThisWorksSection.jsx";
 import CalendarSection from "./sections/CalendarSection.jsx";
 
 function Page() {
     return (
         <main className="page-main">
             <AboutSection/>
-            <HowToJoinSection/>
+            <HowThisWorksSection/>
             <CalendarSection/>
         </main>
     )

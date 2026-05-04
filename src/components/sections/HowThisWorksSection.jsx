@@ -1,12 +1,14 @@
 import './Section.css'
 
-function HowToJoinSection() {
+function HowThisWorksSection() {
     return (
         <section className="section section-join">
             <div className="container section-inner">
                 <div className="section-text-block">
-                    <h2 className="section-title section-title--light">Как вступить</h2>
+                    <h2 className="section-title section-title--light">Как это работает?</h2>
                     <p className="section-description">
+                        Общение происходит в группе в Telegram.
+
                         Просто вступить в группу и написать интро про себя с хэштегом
                         #whois — чем занимаешься, где работаешь или учишься, где живешь,
                         в какой активности хочешь участвовать в клубе.
@@ -34,4 +36,4 @@ function HowToJoinSection() {
     )
 }
 
-export default HowToJoinSection
+export default HowThisWorksSection
