@@ -7,7 +7,7 @@ function TelegramBotSection({blueSection}) {
                 <div className="section-text-block">
                     <h2 className={`section-title ${blueSection ? 'section-title--light' : ''}`}>Как вступить?</h2>
                     <p className="section-description">
-                        Общение происходит в группе в Telegram, вступить в нее через Telegram бот.
+                        Общение происходит в группе в Telegram, вступить в нее можно через Telegram бот.
                         <br/><br/>
                         А еще бот
                         <ol className="about-list">
