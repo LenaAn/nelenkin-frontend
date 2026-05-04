@@ -23,7 +23,7 @@ function WhatToDiscuss({blueSection}) {
 
                 <img
                     className="section-image"
-                    src="/img/book.svg"
+                    src={`${blueSection? '/img/sparkles.svg' : '/img/book.svg'}`}
                     alt="Иллюстрация клуба"
                 />
             </div>

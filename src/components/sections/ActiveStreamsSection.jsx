@@ -19,7 +19,7 @@ function ActiveStreamsSection({blueSection}) {
 
                 <img
                     className="section-image"
-                    src="/img/sparkles.svg"
+                    src={`${blueSection? '/img/sparkles.svg' : '/img/book.svg'}`}
                     alt="Декоративные звёздочки"
                 />
             </div>
