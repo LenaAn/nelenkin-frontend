@@ -27,6 +27,11 @@
   font-display: swap;
 }
 
+p, h1, h2, a {
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
 body {
   margin: 0;
   line-height: 1.4;
