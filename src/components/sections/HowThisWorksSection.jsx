@@ -16,7 +16,7 @@ function HowThisWorksSection({blueSection}) {
                         <br/><br/>
                         Докладчик не обязан быть экспертом по теме, а презентация не должна полностью пересказывать
                         тему,
-                        она скорее задает структуру встречи служит толчком к обсуждению.
+                        она только задает структуру встречи служит толчком к обсуждению.
                     </p>
                     <div className="section-actions">
                         <a href="https://t.me/neLenkin_bot" target="_blank" rel="noopener noreferrer"
