@@ -1,0 +1,15 @@
+.site-footer {
+    padding: 2.5rem 0 3.75rem 0;
+}
+
+.footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+.footer-brand,
+.footer-copy {
+    line-height: 1.2;
+}
