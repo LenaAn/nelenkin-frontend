@@ -1,0 +1,114 @@
+a {
+    text-decoration: none;
+}
+
+.section {
+    padding: 0;
+}
+
+.section-white {
+    background-color: var(--color-bg);
+}
+
+.section-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.section-text-block {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+
+.section-title {
+    font-family: "Ithaca", "Oswald", system-ui, sans-serif;
+    font-size: 5.6rem;
+    line-height: 1.1;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0 0 0.6rem 0;
+}
+
+.cta-section-title {
+    text-align: center;
+}
+
+.section-description {
+    max-width: 48rem;
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+
+.section-description p {
+    margin: 0 0 1rem 0;
+}
+
+.about-list {
+    margin: 0;
+    padding-left: 2rem;
+}
+
+.about-list li {
+    margin-bottom: 0.25rem;
+}
+
+.section-actions {
+    margin-top: 1rem;
+}
+
+.cta-actions {
+    display: flex;
+    justify-content: center;
+}
+
+.section-image {
+    display: flex;
+    width: 273px;
+    height: 240px;
+    object-fit: contain;
+}
+
+.section-blue {
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    padding: 3.75rem 0;
+}
+
+.section-title--light {
+    color: var(--color-light);
+}
+
+.section-calendar {
+    background-color: var(--color-bg);
+}
+
+.section-calendar-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    text-align: center;
+}
+
+.calendar-frame {
+    width: 100%;
+}
+
+@media (max-width: 640px) {
+    .section-title {
+        font-size: 3rem;
+    }
+    .section-description {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 80rem) {
+    .section-image {
+        display: none;
+    }
+}

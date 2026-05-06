@@ -1,11 +1,17 @@
 :root {
+  --header-height: 100px;
+  --section-gap: 5rem;
+
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  --color-bg: #fefefe;
+  --color-primary: #1a598e;
+  --color-accent: #ffbe31;
+  --color-text: #1a598e;
+  --color-light: #fefefe;
+  --color-hover: #c1fdfb;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,21 +19,25 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+@font-face {
+  font-family: "Ithaca";
+  src: url("/public/fonts/Ithaca.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
-a:hover {
-  color: #535bf2;
+
+p, h1, h2, a {
+  word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  line-height: 1.4;
+  font-family: IBM Plex Sans, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
 }
 
 h1 {
@@ -35,34 +45,55 @@ h1 {
   line-height: 1.1;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 8vw;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.btn {
+  font-size: 1.8rem;
+  line-height: 1;
+  height: var(--header-height) - 44;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 53px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  border: 1px solid transparent;
+  font-family: "Ithaca", "Oswald", system-ui, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition:
+          background-color 0.2s ease,
+          border-color 0.2s ease,
+          transform 0.1s ease;
+}
+
+.btn--primary {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-primary);
+}
+
+.btn--light {
+  background-color: var(--color-light);
+  border-color: var(--color-light);
+  color: var(--color-primary);
+}
+
+.btn--outline:hover,
+.btn--primary:hover,
+.btn--light:hover {
+  background-color: var(--color-hover);
+  border-color: var(--color-hover);
+  color: var(--color-primary);
+  transform: translateY(-1px);
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
 }
