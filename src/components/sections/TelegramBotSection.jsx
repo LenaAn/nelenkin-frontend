@@ -10,15 +10,15 @@ function TelegramBotSection({blueSection}) {
                         Общение происходит в группе в Telegram, вступить в нее можно через Telegram бот.
                         <br/><br/>
                         А еще бот
-                        <ol className="about-list">
-                            <li>Знает, какие потоки сейчас активны</li>
-                            <li>Присылает ссылку на Zoom звонок за 5 минут до встречи</li>
-                            <li>Делает рассылку новостей клуба, объявляет о новых потоках и сходках в разных
-                                городах
-                            </li>
-                            <li>Следит, чтобы не было анонимов — чтобы вступить в клуб, надо написать интро в боте</li>
-                        </ol>
                     </p>
+                    <ol className="about-list section-description">
+                        <li>Знает, какие потоки сейчас активны</li>
+                        <li>Присылает ссылку на Zoom звонок за 5 минут до встречи</li>
+                        <li>Делает рассылку новостей клуба, объявляет о новых потоках и сходках в разных
+                            городах
+                        </li>
+                        <li>Следит, чтобы не было анонимов — чтобы вступить в клуб, надо написать интро в боте</li>
+                    </ol>
                     <div className="section-actions">
                         <a href="https://t.me/neLenkin_bot" target="_blank" rel="noopener noreferrer"
                            className={`btn ${blueSection ? 'btn--light' : 'btn--primary'}`}>к Telegram-боту</a>
