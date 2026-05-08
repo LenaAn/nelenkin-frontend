@@ -1,9 +1,9 @@
 import './Header.css'
 import {Link} from "react-router-dom";
-import {useState} from "react";
+import {useModal} from "./ModalContext.jsx";
 
 function Header() {
-    const [isModalOpen, setIsModalOpen] = useState(false);
+    const { openTelegramModal } = useModal();
 
     return (
         <>
@@ -22,52 +22,12 @@ function Header() {
 
                     <button
                         className="btn header-btn btn--outline"
-                        onClick={() => {
-                            window.gtag?.('event', 'open_telegram_modal', {
-                                event_category: 'engagement',
-                                event_label: 'header_button',
-                            });
-
-                            setIsModalOpen(true);
-                        }}
+                        onClick={openTelegramModal}
                     >
                         Вступить в клуб
                     </button>
                 </div>
             </header>
-
-            {isModalOpen && (
-                <div
-                    className="modal-overlay"
-                    onClick={() => setIsModalOpen(false)}
-                >
-                    <div
-                        className="modal"
-                        onClick={(e) => e.stopPropagation()}
-                    >
-                        <h2>
-                            Клуб пока живет в Telegram!
-                        </h2>
-                        <p className="modal-description">
-                            Обсуждения проходят в закрытой группе, в которую можно вступить через бот
-                        </p>
-
-                        <a
-                            href="https://t.me/neLenkin_bot"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="btn btn--primary"
-                            onClick={() => {
-                                window.gtag?.('event', 'click_telegram_link', {
-                                    event_category: 'conversion',
-                                });
-                            }}
-                        >
-                            Открыть в Telegram
-                        </a>
-                    </div>
-                </div>
-            )}
         </>
     )
 }
