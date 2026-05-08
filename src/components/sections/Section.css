@@ -1,5 +1,12 @@
 a {
-    text-decoration: none;
+        color: inherit;
+        text-decoration: underline;
+}
+
+.a:visited,
+.a:hover,
+.a:active {
+    color: inherit;
 }
 
 .section {

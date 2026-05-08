@@ -10,9 +10,12 @@ function PastBoooksSection({blueSection}) {
                     <div className="section-description">
                         Уже прочитали
                         <ol className="about-list">
-                            <li>Designing Data-Intensive Applications</li>
-                            <li>Site Reliability Engineering: How Google Runs Production Systems</li>
-                            <li>Designing Machine Learning Systems</li>
+                            <li><a href="https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/">
+                                Designing Data-Intensive Applications</a></li>
+                            <li><a href="https://www.oreilly.com/library/view/site-reliability-engineering/9781491929117/">
+                                Site Reliability Engineering: How Google Runs Production Systems</a></li>
+                            <li><a href="https://www.oreilly.com/library/view/designing-machine-learning/9781098107956/">
+                                Designing Machine Learning Systems</a></li>
                         </ol>
                         <br/>
                         А также прорешали
