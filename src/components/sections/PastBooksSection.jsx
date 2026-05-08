@@ -48,7 +48,7 @@ function PastBoooksSection({blueSection}) {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 href="https://app.codecrafters.io/courses/kafka/overview">
-                                Redis Kafka</a></li>
+                                Kafka CodeCrafters</a></li>
                         </ol>
                         <br/>
                         А еще вместе готовимся к алгоритмическим собеседованиям
