@@ -22,7 +22,14 @@ function Header() {
 
                     <button
                         className="btn header-btn btn--outline"
-                        onClick={() => setIsModalOpen(true)}
+                        onClick={() => {
+                            window.gtag?.('event', 'open_telegram_modal', {
+                                event_category: 'engagement',
+                                event_label: 'header_button',
+                            });
+
+                            setIsModalOpen(true);
+                        }}
                     >
                         Вступить в клуб
                     </button>
@@ -50,6 +57,11 @@ function Header() {
                             target="_blank"
                             rel="noopener noreferrer"
                             className="btn btn--primary"
+                            onClick={() => {
+                                window.gtag?.('event', 'click_telegram_link', {
+                                    event_category: 'conversion',
+                                });
+                            }}
                         >
                             Открыть в Telegram
                         </a>
