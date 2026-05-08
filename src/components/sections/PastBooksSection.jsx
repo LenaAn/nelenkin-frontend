@@ -10,22 +10,54 @@ function PastBoooksSection({blueSection}) {
                     <div className="section-description">
                         Уже прочитали
                         <ol className="about-list">
-                            <li>Designing Data-Intensive Applications</li>
-                            <li>Site Reliability Engineering: How Google Runs Production Systems</li>
-                            <li>Designing Machine Learning Systems</li>
+                            <li><a
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href="https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/">
+                                Designing Data-Intensive Applications</a></li>
+                            <li><a
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href="https://www.oreilly.com/library/view/site-reliability-engineering/9781491929117/">
+                                Site Reliability Engineering: How Google Runs Production Systems</a></li>
+                            <li><a
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href="https://www.oreilly.com/library/view/designing-machine-learning/9781098107956/">
+                                Designing Machine Learning Systems</a></li>
                         </ol>
                         <br/>
                         А также прорешали
                         <ol className="about-list">
-                            <li>Advent Of Code 2024</li>
-                            <li>Advent Of Code 2025</li>
-                            <li>Redis CodeCrafters</li>
-                            <li>Redis Kafka</li>
+                            <li><a
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href="https://adventofcode.com/2024">
+                                Advent Of Code 2024</a></li>
+                            <li><a
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href="https://adventofcode.com/2025">
+                                Advent Of Code 2025</a></li>
+                            <li><a
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href="https://app.codecrafters.io/courses/redis/overview">
+                                Redis CodeCrafters</a></li>
+                            <li><a
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href="https://app.codecrafters.io/courses/kafka/overview">
+                                Redis Kafka</a></li>
                         </ol>
                         <br/>
                         А еще вместе готовимся к алгоритмическим собеседованиям
                         <ol className="about-list">
-                            <li>Разбираем задачи из списка LeetCode 75</li>
+                            <li>Разбираем задачи из списка <a
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href="https://leetcode.com/studyplan/leetcode-75/">
+                                LeetCode 75</a></li>
                             <li>Каждую неделю проводим моки по Leetcode</li>
                         </ol>
                     </div>
@@ -33,7 +65,7 @@ function PastBoooksSection({blueSection}) {
 
                 <img
                     className="section-image"
-                    src={`${blueSection? '/img/sparkles.svg' : '/img/book.svg'}`}
+                    src={`${blueSection ? '/img/sparkles.svg' : '/img/book.svg'}`}
                     alt="Иллюстрация клуба"
                 />
             </div>
