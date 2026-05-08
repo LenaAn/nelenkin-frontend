@@ -53,7 +53,11 @@ function PastBoooksSection({blueSection}) {
                         <br/>
                         А еще вместе готовимся к алгоритмическим собеседованиям
                         <ol className="about-list">
-                            <li>Разбираем задачи из списка LeetCode 75</li>
+                            <li>Разбираем задачи из списка <a
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href="https://leetcode.com/studyplan/leetcode-75/">
+                                LeetCode 75</a></li>
                             <li>Каждую неделю проводим моки по Leetcode</li>
                         </ol>
                     </div>
