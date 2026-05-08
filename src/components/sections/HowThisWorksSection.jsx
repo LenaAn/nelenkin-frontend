@@ -1,6 +1,9 @@
 import './Section.css'
+import {useModal} from "../ModalContext.jsx";
 
 function HowThisWorksSection({blueSection}) {
+    const { openTelegramModal } = useModal();
+
     return (
         <section className={`section ${blueSection ? 'section-blue' : 'section-white'}`}>
             <div className="container section-inner">
@@ -19,14 +22,18 @@ function HowThisWorksSection({blueSection}) {
                         она только задает структуру встречи служит толчком к обсуждению.
                     </p>
                     <div className="section-actions">
-                        <a href="https://t.me/neLenkin_bot" target="_blank" rel="noopener noreferrer"
-                           className={`btn ${blueSection ? 'btn--light' : 'btn--primary'}`}>к Telegram-боту</a>
+                        <button
+                            className={`btn ${blueSection ? 'btn--light' : 'btn--primary'}`}
+                            onClick={openTelegramModal}
+                        >
+                            Вступить в клуб
+                        </button>
                     </div>
                 </div>
 
                 <img
                     className="section-image"
-                    src={`${blueSection? '/img/sparkles.svg' : '/img/book.svg'}`}
+                    src={`${blueSection ? '/img/sparkles.svg' : '/img/book.svg'}`}
                     alt="Декоративные звёздочки"
                 />
             </div>

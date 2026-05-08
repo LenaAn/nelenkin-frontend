@@ -10,11 +10,11 @@ function ActiveStreamsSection({blueSection}) {
                     <p className="section-description">
                         Прямо сейчас мы читаем Designing Data-Intensive Applications (второе издание). А также
                         тренируем алгоритмические собеседования
-                        <ol className="about-list">
-                            <li>Разбираем задачи из списка Leetcode-75</li>
-                            <li>Каждую неделю устраиваем моки на определенную тему с Leetcode</li>
-                        </ol>
                     </p>
+                    <ol className="about-list section-description">
+                        <li>Разбираем задачи из списка Leetcode-75</li>
+                        <li>Каждую неделю устраиваем моки на определенную тему с Leetcode</li>
+                    </ol>
                 </div>
 
                 <img
