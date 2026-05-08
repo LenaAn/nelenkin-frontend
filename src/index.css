@@ -1,6 +1,7 @@
 :root {
   --header-height: 100px;
   --section-gap: 5rem;
+  --announcement-height: 95px;
 
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

@@ -1,0 +1,33 @@
+.announcement-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: var(--announcement-height);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-inline: 1.5rem;
+
+    background: var(--color-accent);
+    color: white;
+
+    z-index: 20;
+
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.announcement-link {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.announcement-link:visited,
+.announcement-link:hover,
+.announcement-link:active {
+    color: inherit;
+}
