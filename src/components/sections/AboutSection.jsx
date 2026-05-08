@@ -1,6 +1,9 @@
 import './Section.css'
+import {useModal} from "../ModalContext.jsx";
 
 function AboutSection({blueSection}) {
+    const { openHistoryModal } = useModal();
+
     return (
         <section className={`section ${blueSection? 'section-blue' : 'section-white'}`}>
             <div className="container section-inner">
@@ -20,14 +23,18 @@ function AboutSection({blueSection}) {
                     </div>
 
                     <div className="section-actions">
-                        <a href="https://vas3k.club/post/26356/" target="_blank" rel="noopener noreferrer"
-                           className={`btn ${blueSection ? 'btn--light' : 'btn--primary'}`}>Про историю клуба</a>
+                        <button
+                            onClick={openHistoryModal}
+                            className={`btn ${blueSection ? 'btn--light' : 'btn--primary'}`}
+                        >
+                            Про историю клуба
+                        </button>
                     </div>
                 </div>
 
                 <img
                     className="section-image"
-                    src={`${blueSection? '/img/sparkles.svg' : '/img/book.svg'}`}
+                    src={`${blueSection ? '/img/sparkles.svg' : '/img/book.svg'}`}
                     alt="Иллюстрация клуба"
                 />
             </div>
