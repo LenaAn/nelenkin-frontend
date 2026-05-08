@@ -1,15 +1,12 @@
-import Header from "./Header.jsx";
-import Page from "./Page.jsx"
-import Footer from "./Footer.jsx"
+import Landing from "./Landing.jsx";
+import {Navigate, Route, Routes} from "react-router-dom";
 
 function App() {
-
   return (
-      <div className="page">
-          <Header/>
-          <Page/>
-          <Footer/>
-      </div>
+      <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
   )
 }
 
