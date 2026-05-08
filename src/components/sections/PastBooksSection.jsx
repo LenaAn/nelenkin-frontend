@@ -10,23 +10,44 @@ function PastBoooksSection({blueSection}) {
                     <div className="section-description">
                         Уже прочитали
                         <ol className="about-list">
-                            <li><a href="https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/">
+                            <li><a
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href="https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/">
                                 Designing Data-Intensive Applications</a></li>
-                            <li><a href="https://www.oreilly.com/library/view/site-reliability-engineering/9781491929117/">
+                            <li><a
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href="https://www.oreilly.com/library/view/site-reliability-engineering/9781491929117/">
                                 Site Reliability Engineering: How Google Runs Production Systems</a></li>
-                            <li><a href="https://www.oreilly.com/library/view/designing-machine-learning/9781098107956/">
+                            <li><a
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href="https://www.oreilly.com/library/view/designing-machine-learning/9781098107956/">
                                 Designing Machine Learning Systems</a></li>
                         </ol>
                         <br/>
                         А также прорешали
                         <ol className="about-list">
-                            <li><a href="https://adventofcode.com/2024">
+                            <li><a
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href="https://adventofcode.com/2024">
                                 Advent Of Code 2024</a></li>
-                            <li><a href="https://adventofcode.com/2025">
+                            <li><a
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href="https://adventofcode.com/2025">
                                 Advent Of Code 2025</a></li>
-                            <li><a href="https://app.codecrafters.io/courses/redis/overview">
+                            <li><a
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href="https://app.codecrafters.io/courses/redis/overview">
                                 Redis CodeCrafters</a></li>
-                            <li><a href="https://app.codecrafters.io/courses/kafka/overview">
+                            <li><a
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href="https://app.codecrafters.io/courses/kafka/overview">
                                 Redis Kafka</a></li>
                         </ol>
                         <br/>
@@ -40,7 +61,7 @@ function PastBoooksSection({blueSection}) {
 
                 <img
                     className="section-image"
-                    src={`${blueSection? '/img/sparkles.svg' : '/img/book.svg'}`}
+                    src={`${blueSection ? '/img/sparkles.svg' : '/img/book.svg'}`}
                     alt="Иллюстрация клуба"
                 />
             </div>
