@@ -20,10 +20,14 @@ function PastBoooksSection({blueSection}) {
                         <br/>
                         А также прорешали
                         <ol className="about-list">
-                            <li>Advent Of Code 2024</li>
-                            <li>Advent Of Code 2025</li>
-                            <li>Redis CodeCrafters</li>
-                            <li>Redis Kafka</li>
+                            <li><a href="https://adventofcode.com/2024">
+                                Advent Of Code 2024</a></li>
+                            <li><a href="https://adventofcode.com/2025">
+                                Advent Of Code 2025</a></li>
+                            <li><a href="https://app.codecrafters.io/courses/redis/overview">
+                                Redis CodeCrafters</a></li>
+                            <li><a href="https://app.codecrafters.io/courses/kafka/overview">
+                                Redis Kafka</a></li>
                         </ol>
                         <br/>
                         А еще вместе готовимся к алгоритмическим собеседованиям
