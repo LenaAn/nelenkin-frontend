@@ -11,9 +11,20 @@ function ActiveStreamsSection({blueSection}) {
                         Активные потоки сейчас:
                     </p>
                     <ol className="about-list section-description">
-                        <li>The Software Engineer's Guidebook (скоро начнется! 💖)</li>
-                        <li>Designing Data-Intensive Applications (второе издание)</li>
-                        <li>Разбираем задачи из списка Leetcode-75</li>
+                        <li><a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://www.engguidebook.com/">The Software Engineer's Guidebook</a> (скоро начнется! 💖)</li>
+                        <li><a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://www.oreilly.com/library/view/designing-data-intensive-applications/9781098119058/">
+                            Designing Data-Intensive Applications (второе издание)</a></li>
+                        <li>Разбираем задачи из списка <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://leetcode.com/studyplan/leetcode-75/">
+                            LeetCode 75</a></li>
                         <li>Каждую неделю устраиваем моки на определенную тему с Leetcode</li>
                     </ol>
                 </div>
