@@ -7,7 +7,7 @@ import AnnouncementBanner from "./AnnouncementBanner.jsx";
 function Landing() {
     return (
         <div className="page">
-            <AnnouncementBanner />
+            {/*<AnnouncementBanner />*/}
             <Header/>
             <Page/>
             <Footer/>
